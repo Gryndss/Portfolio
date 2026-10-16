@@ -3,568 +3,606 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grynds - Portfolio</title>
+    <meta
+      name="description"
+      content="Alvin (Grynds) — Développeur fullstack & étudiant en BTS SIO SLAM. Sites web, interfaces, bots Discord, applications et outils numériques. En recherche d'alternance en Île-de-France."
+    />
+    <title>Alvin — Développeur Fullstack</title>
+
+    <!-- Typographie : système Apple en priorité, Inter en secours -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="mesh-bg">
-      <div class="orb orb-1"></div>
-      <div class="orb orb-2"></div>
-      <div class="orb orb-3"></div>
-    </div>
-    <!-- Navigation -->
+    <!-- ===================== NAVIGATION ===================== -->
+    <header class="nav" id="nav">
+      <div class="nav__inner">
+        <a href="#hero" class="nav__brand">Alvin</a>
 
-    <nav class="navbar">
-      <div class="navbar-container">
-        <div class="logo">Grynds</div>
-        <div class="burger-menu" id="burgerMenu">
-          <img src="Menu.png" alt="Menu" />
-        </div>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="#home" class="nav-link">Accueil</a></li>
-          <li><a href="#about" class="nav-link">À propos</a></li>
-          <li><a href="#services" class="nav-link">Services</a></li>
-          <li><a href="#skills" class="nav-link">Compétences</a></li>
-          <li><a href="#projects" class="nav-link">Projets</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <button class="contact-btn">Me Contacter</button>
+        <nav class="nav__links" aria-label="Navigation principale">
+          <a href="#about">À propos</a>
+          <a href="#skills">Compétences</a>
+          <a href="#projects">Projets</a>
+          <a href="#services">Services</a>
+          <a href="#journey">Parcours</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#contact" class="nav__cta">Me contacter</a>
+
+        <!-- Bouton menu mobile -->
+        <button
+          class="nav__burger"
+          id="burger"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
       </div>
-    </nav>
+    </header>
 
-    <!-- Section Home -->
-    <section id="home" class="section home">
-      <div class="home-content">
-        <div class="home-text">
-          <h1 class="greeting">
-            Salut, c'est
-            <span class="name-highlight gradient-text">Grynds</span>
+    <main>
+      <!-- ===================== HERO ===================== -->
+      <section class="hero" id="hero">
+        <div class="hero__content reveal">
+          <p class="hero__eyebrow">Alvin — alias Grynds</p>
+          <h1 class="hero__title">
+            Développeur Fullstack<br />&amp; étudiant en BTS&nbsp;SIO&nbsp;SLAM.
           </h1>
-          <h2 class="subtitle">
-            Je suis un
-            <span class="typing-text">Développeur Inderterminer</span>
-          </h2>
-          <p class="description">
-            Bienvenue sur mon portfolio ! Je suis un développeur fullstack
-            passionné par la tech, le gaming et la création numérique. J’aime
-            donner vie à des idées, apprendre en continu et relever de nouveaux
-            défis dans l’univers du développement.
+          <p class="hero__subtitle">
+            Je crée des sites, des interfaces, des bots Discord, des
+            applications et des outils numériques.
           </p>
-
-          <div class="social-links">
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">Voir mes projets</a>
+            <a href="#contact" class="btn btn--ghost">Me contacter</a>
             <a
               href="https://github.com/Gryndss"
-              class="social-icon"
-              title="GitHub"
+              class="btn btn--link"
+              target="_blank"
+              rel="noopener"
+              >GitHub ↗</a
             >
-              <img src="Images/Github.png" alt="GitHub" />
-            </a>
-
-            <section class="comup-part">
-              <a
-                href="https://comeup.com/fr/@grynds"
-                class="social-icon"
-                title="ComeUp"
-              >
-                <img src="Images/channels4_profile.png" alt="ComeUp" />
-              </a>
-            </section>
-
-            <a
-              href="https://www.instagram.com/alvin_91150/"
-              class="social-icon"
-              title="Instagram"
-            >
-              <img src="Images/Instagram.png" alt="Instagram" />
-            </a>
-
-            <a href="https://x.com/a2n_ci" class="social-icon" title="Twitter">
-              <img src="Images/Twitter.png" alt="Twitter" />
-            </a>
-          </div>
-
-          <div class="home-buttons">
-            <a href="#contact">
-              <button class="btn btn-primary">Recruter</button>
-            </a>
           </div>
         </div>
+      </section>
 
-        <div class="home-image">
-          <img src="Images/Logo Perso grynd.png" alt="Logo" class="logo-home" />
-        </div>
-      </div>
-    </section>
-
-    <!-- Section À Propos -->
-    <section id="about" class="section about">
-      <div class="section-container">
-        <div class="about-content">
-          <div class="about-image">
-            <div class="profile-circle-small">
-              <img src="Images/Logo Perso grynd.png" alt="Profil" />
-            </div>
-          </div>
-          <div class="about-text">
-            <h2 class="section-title">
-              À Propos <span class="title-highlight">de Moi</span>
-            </h2>
+      <!-- ===================== À PROPOS ===================== -->
+      <section class="section section--light" id="about">
+        <div class="container reveal">
+          <p class="section__eyebrow">À propos</p>
+          <h2 class="section__title">
+            Passionné de tech, de gaming et de création numérique.
+          </h2>
+          <div class="about__text">
             <p>
-              Je suis Grynd, étudiant passionné par l’informatique et le
-              développement. Je crée des projets en HTML, CSS, JavaScript,
-              Python, TS notamment des sites web et des bots Discord ou
-              application et jeux videos. J’aime apprendre en pratiquant,
-              résoudre des problèmes et améliorer mes compétences au quotidien.
+              Je suis Alvin (Grynds), développeur fullstack et étudiant en
+              <strong>BTS SIO option SLAM</strong>, basé en région parisienne.
+              Je crée des sites web, des bots Discord, des applications et des
+              jeux vidéo avec HTML, CSS, JavaScript, TypeScript et Python, du
+              front-end jusqu'à la base de données.
             </p>
-            <div class="stats-container">
-              <div class="stat-box">
-                <h3 class="stat-number">3+</h3>
-                <p class="stat-label">Années d'expérience</p>
-              </div>
-              <div class="stat-box">
-                <h3 class="stat-number">100+</h3>
-                <p class="stat-label">Projets complétés</p>
-              </div>
-              <div class="stat-box">
-                <h3 class="stat-number">200+</h3>
-                <p class="stat-label">Clients satisfaits</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section Services -->
-    <section id="services" class="section services">
-      <div class="section-container">
-        <h2 class="section-title">Mes Services</h2>
-        <div class="services-grid">
-          <div class="service-card">
-            <div class="service-icon">
-              <img src="Images/Figma.png" alt="UI/UX Design" />
-            </div>
-            <h3>Design UI/UX</h3>
             <p>
-              Je conçois des interfaces modernes, intuitives et centrées sur
-              l’utilisateur. Mon objectif est de transformer vos idées en
-              expériences fluides et engageantes, en alliant esthétique et
-              ergonomie pour maximiser l’impact de votre produit.
-            </p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <img src="Images/Html.png" alt="Frontend Development" />
-            </div>
-            <h3>Développement Frontend</h3>
-            <p>
-              Je développe des interfaces web performantes, responsives et
-              dynamiques en utilisant les technologies modernes. Chaque détail
-              est optimisé pour offrir une expérience utilisateur rapide, fluide
-              et agréable sur tous les appareils.
-            </p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <img src="Images/Pyhton.png" alt="Backend Development" />
-            </div>
-            <h3>Développement Backend</h3>
-            <p>
-              Je crée des API et hacks robustes et efficaces, en utilisant des
-              langages de programmation modernes pour assurer la performance et
-              la scalabilité de vos applications.
+              J'ai fait la <strong>Piscine de l'École 42</strong>, où j'ai
+              travaillé en C et en Python. J'aime apprendre en pratiquant,
+              résoudre des problèmes et donner vie à des idées. Je cherche
+              aujourd'hui une
+              <strong>alternance en développement web / logiciel</strong>.
             </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Section Compétences -->
-    <section id="skills" class="section skills">
-      <div class="section-container">
-        <h2 class="section-title">
-          Mes <span class="title-highlight">Compétences</span>
-        </h2>
-        <p class="skills-subtitle">
-          Les technologies et outils que je maîtrise
-        </p>
-        <div class="skills-content">
-          <div class="skills-category">
-            <h3>Front-End</h3>
-            <div class="skills-list">
-              <div class="skill-item">
-                <div class="skill-header">
-                  <span class="skill-name">HTML</span>
-                  <span class="skill-percent">100%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 100%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-header">
-                  <span class="skill-name">CSS</span>
-                  <span class="skill-percent">100%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 100%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-header">
-                  <span class="skill-name">JavaScript</span>
-                  <span class="skill-percent">100%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 100%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-header">
-                  <span class="skill-name">TypeScript</span>
-                  <span class="skill-percent">100%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 100%"></div>
-                </div>
-              </div>
-            </div>
+      <!-- ===================== COMPÉTENCES ===================== -->
+      <section class="section" id="skills">
+        <div class="container reveal">
+          <p class="section__eyebrow">Compétences</p>
+          <h2 class="section__title">Les technologies que j'utilise.</h2>
+
+          <div class="skills__grid">
+            <article class="skill">
+              <span class="skill__name">HTML</span>
+            </article>
+            <article class="skill">
+              <span class="skill__name">CSS</span>
+            </article>
+            <article class="skill">
+              <span class="skill__name">JavaScript</span>
+            </article>
+            <article class="skill">
+              <span class="skill__name">TypeScript</span>
+            </article>
+            <article class="skill">
+              <span class="skill__name">Python</span>
+            </article>
+            <article class="skill"><span class="skill__name">C</span></article>
+            <article class="skill">
+              <span class="skill__name">Node.js</span>
+            </article>
+            <article class="skill">
+              <span class="skill__name">Discord.js</span>
+            </article>
+            <article class="skill">
+              <span class="skill__name">Tailwind CSS</span>
+            </article>
+            <article class="skill">
+              <span class="skill__name">API</span>
+            </article>
+            <article class="skill">
+              <span class="skill__name">Supabase</span>
+            </article>
+            <article class="skill">
+              <span class="skill__name">PostgreSQL + Prisma</span>
+            </article>
+            <article class="skill">
+              <span class="skill__name">MongoDB + Mongoose</span>
+            </article>
+            <article class="skill">
+              <span class="skill__name">Figma</span>
+            </article>
+            <article class="skill">
+              <span class="skill__name">VS Code</span>
+            </article>
+            <article class="skill">
+              <span class="skill__name">Git / GitHub</span>
+            </article>
+            <article class="skill">
+              <span class="skill__name">Electron</span>
+            </article>
           </div>
-          <div class="skills-category">
-            <h3>Back-End</h3>
-            <div class="skills-list">
-              <div class="skill-item">
-                <div class="skill-header">
-                  <span class="skill-name">Python</span>
-                  <span class="skill-percent">90%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 90%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-header">
-                  <span class="skill-name">C</span>
-                  <span class="skill-percent">1%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 1%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-header">
-                  <span class="skill-name">Discord.Js</span>
-                  <span class="skill-percent">70%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 70%"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="skills-category">
-            <h3>Outils & Autres</h3>
-            <div class="skills-list">
-              <div class="skill-item">
-                <div class="skill-header">
-                  <span class="skill-name">Figma</span>
-                  <span class="skill-percent">95%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 95%"></div>
-                </div>
-              </div>
-            </div>
-          </div>
+
+          <ul class="skills__soft">
+            <li>Création de sites</li>
+            <li>UI / UX</li>
+            <li>Résolution de bugs</li>
+            <li>Automatisation</li>
+            <li>Relation client</li>
+            <li>Apprentissage rapide</li>
+          </ul>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Section Projets -->
-    <section id="projects" class="section projects">
-      <div class="section-container">
-        <h2 class="section-title">Mes Projets</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-image-1">
-              <img src="Project 1 Page/fe.png" alt="Pathra Logo" />
-            </div>
-            <div class="project-content">
-              <h3>Bot Discord Sur-Mesure</h3>
-              <p>
-                Votre bot Discord personnalisé, conçu pour répondre à vos
-                besoins spécifiques. Que ce soit pour la modération, les jeux,
-                la musique ou les fonctionnalités uniques, je crée un bot
-                sur-mesure qui s'intègre parfaitement à votre communauté et
-                améliore l'expérience de vos membres.
-              </p>
-              <div class="project-languages">
-                <span class="language-tag">Python</span>
-                <span class="language-tag">Node.js</span>
-              </div>
-              <div class="project-actions">
-                <a
-                  href="https://github.com/Gryndss"
-                  class="project-link"
-                  title="Voir sur GitHub"
-                >
-                  <img src="Images/Github.png" alt="GitHub" />
-                </a>
-                <button
-                  class="btn-learn-more"
-                  onclick="
-                    window.open('https://comeup.com/fr/@grynds', '_blank')
-                  "
-                >
-                  En savoir plus
-                </button>
-              </div>
-            </div>
-          </div>
+      <!-- ===================== PROJETS ===================== -->
+      <section class="section section--light" id="projects">
+        <div class="container reveal">
+          <p class="section__eyebrow">Projets</p>
+          <h2 class="section__title">Des projets concrets.</h2>
 
-          <div class="project-card">
-            <div class="project-image">
-              <div class="project-image-2">
+          <div class="projects__grid">
+            <!-- Oriyn -->
+            <article class="project">
+              <div class="project__media1">
                 <img
-                  src="Images/AiGuild_SHIELD_Blanc_ET_Png.png"
-                  alt="AiGuild Logo"
+                  src="assets/Logo FULL Version fond Transparent Noir.svg"
+                  alt="Logo De Noriyn"
                 />
               </div>
-            </div>
-            <div class="project-content">
-              <h3>AiGuild</h3>
-              <p>
-                Bot Discord génèrant automatiquement la structure complète d'un
-                serveur Discord à partir d'un simple prompt. Rapide et efficace,
-                adapté à divers besoins comme le gaming, les affaires ou la
-                création.
-              </p>
-              <div class="project-languages">
-                <span class="language-tag">Type.js</span>
-                <span class="language-tag">Claude</span>
-                <span class="language-tag">Node.js</span>
-                <span class="language-tag">Discord.js</span>
+              <div class="project__body">
+                <h3 class="project__title">Noriyn</h3>
+                <p class="project__desc">
+                  Application en cours de création pour les jeux videos
+                </p>
+                <ul class="project__tags">
+                  <li>Produit</li>
+                  <li>JavaScript</li>
+                  <li>UI</li>
+                  <li>TypeScript</li>
+                </ul>
+                <p class="project__role">
+                  <strong>Rôle :</strong> conception &amp; développement
+                </p>
+                <div class="project__links">
+                  <!-- TODO : remplace par le lien oriyn.com quand il est en ligne -->
+                  <span class="btn btn--small btn--disabled"
+                    >Bientôt disponible</span
+                  >
+                </div>
               </div>
-              <div class="project-actions">
-                <a
-                  href="https://github.com/Gryndss"
-                  class="project-link"
-                  title="Voir sur GitHub"
-                >
-                  <img src="Images/Github.png" alt="GitHub" />
-                </a>
-                <button
-                  class="btn-learn-more"
-                  onclick="window.open('https://aiguild.me', '_blank')"
-                >
-                  En savoir plus
-                </button>
-              </div>
-            </div>
-          </div>
+            </article>
 
-          <div class="project-card">
-            <div class="project-image">
-              <div class="project-image-3">
+            <!-- AIGuild -->
+            <article class="project">
+              <div class="project__media">
+                <img
+                  src="Images/AiGuild_SHIELD_Blanc_ET_Png.svg"
+                  alt="Logo de AiGuild"
+                />
+              </div>
+              <div class="project__body">
+                <h3 class="project__title">AIGuild</h3>
+                <p class="project__desc">
+                  Bot Discord qui génère automatiquement la structure complète
+                  d'un serveur à partir d'un simple prompt, pour le gaming, les
+                  affaires ou la création. Projet dont je suis le responsable
+                  (site, gestion, clients).
+                </p>
+                <ul class="project__tags">
+                  <li>TypeScript</li>
+                  <li>Claude</li>
+                  <li>Node.js</li>
+                  <li>Discord.js</li>
+                </ul>
+                <p class="project__role">
+                  <strong>Rôle :</strong> fondateur &amp; développeur
+                </p>
+                <div class="project__links">
+                  <a
+                    href="https://aiguild.me"
+                    class="btn btn--small"
+                    target="_blank"
+                    rel="noopener"
+                    >aiguild.me ↗</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Bot Discord sur-mesure -->
+            <article class="project">
+              <div class="project__media">
+                <img src="Images/Github.png" alt="Logo Github" />
+              </div>
+              <div class="project__body">
+                <h3 class="project__title">Bots Discord sur-mesure</h3>
+                <p class="project__desc">
+                  Bots personnalisés pour répondre à des besoins précis :
+                  modération, jeux, musique ou fonctionnalités uniques, avec
+                  automatisations et intégrations d'API.
+                </p>
+                <ul class="project__tags">
+                  <li>Python</li>
+                  <li>Node.js</li>
+                  <li>API</li>
+                  <li>Automatisation</li>
+                </ul>
+                <p class="project__role">
+                  <strong>Rôle :</strong> développement back-end
+                </p>
+                <div class="project__links">
+                  <a
+                    href="https://github.com/Gryndss"
+                    class="btn btn--small"
+                    target="_blank"
+                    rel="noopener"
+                    >GitHub ↗</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Application Electron -->
+            <article class="project">
+              <div class="project__media">
                 <img
                   src="Project 3 Page/1_O6KluMvEBZ1cBL3EPo4tig.png"
-                  alt="Projet 3"
+                  alt="Logo Electron"
                 />
               </div>
-            </div>
-            <div class="project-content">
-              <h3>Application Electron Sur-Mesure</h3>
-              <p>
-                Votre application de bureau personnalisée, conçue pour répondre
-                à vos besoins spécifiques. Que ce soit pour la productivité, les
-                loisirs ou les outils professionnels, je crée une application
-                Electron sur-mesure qui s'intègre parfaitement à votre flux de
-                travail et améliore votre expérience utilisateur.
-              </p>
-              <div class="project-languages">
-                <span class="language-tag">Type.js</span>
-                <span class="language-tag">Html </span>
-                <span class="language-tag">Css </span>
-                <span class="language-tag">JavaScript</span>
-                <span class="language-tag">Electron</span>
+              <div class="project__body">
+                <h3 class="project__title">Applications Electron</h3>
+                <p class="project__desc">
+                  Applications de bureau sur-mesure pour la productivité, les
+                  loisirs ou les outils professionnels, intégrées au flux de
+                  travail de l'utilisateur.
+                </p>
+                <ul class="project__tags">
+                  <li>TypeScript</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Electron</li>
+                </ul>
+                <p class="project__role">
+                  <strong>Rôle :</strong> conception &amp; développement
+                </p>
+                <div class="project__links">
+                  <a
+                    href="https://github.com/Gryndss"
+                    class="btn btn--small"
+                    target="_blank"
+                    rel="noopener"
+                    >GitHub ↗</a
+                  >
+                </div>
               </div>
-              <div class="project-actions">
-                <a
-                  href="https://github.com/Gryndss"
-                  class="project-link"
-                  title="Voir sur GitHub"
-                >
-                  <img src="Images/Github.png" alt="GitHub" />
-                </a>
-                <button
-                  class="btn-learn-more"
-                  onclick="
-                    window.open('https://comeup.com/fr/@grynds', '_blank')
-                  "
-                >
-                  En savoir plus
-                </button>
-              </div>
-            </div>
-          </div>
+            </article>
 
-          <div class="project-card">
-            <div class="project-image">
-              <div class="project-image-4">
-                <img
-                  src="Images/SITE WEB MAKE image.png"
-                  alt="Site Web Mockup"
-                />
+            <!-- Sites web complets -->
+            <article class="project">
+              <div class="project__media">
+                <img src="Images/Html.png" alt="Logo HTML" />
               </div>
-            </div>
-            <div class="project-content">
-              <h3>Site web complet sur-mesure</h3>
-              <p>
-                Votre site web personnalisé, conçu pour répondre à vos besoins
-                spécifiques. Que ce soit pour une vitrine, un e-commerce ou un
-                blog, je crée un site web sur-mesure qui s'intègre parfaitement
-                à votre image de marque et améliore l'expérience de vos
-                visiteurs. Possibilité d'intégrer une base de données.
-              </p>
-              <div class="project-languages">
-                <span class="language-tag">Html</span>
-                <span class="language-tag">Css </span>
-                <span class="language-tag">JavaScript</span>
-                <span class="language-tag">Tailwind Css</span>
-                <span class="language-tag">Supabase</span>
-                <span class="language-tag">Prisma + PostgreSQL</span>
-                <span class="language-tag">MongoDB + Mongoose</span>
+              <div class="project__body">
+                <h3 class="project__title">Sites web complets</h3>
+                <p class="project__desc">
+                  Sites vitrines, e-commerce ou blogs créés et vendus à des
+                  clients, du design à la mise en ligne, avec base de données si
+                  besoin.
+                </p>
+                <ul class="project__tags">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Tailwind</li>
+                  <li>Supabase</li>
+                  <li>Prisma + PostgreSQL</li>
+                  <li>MongoDB</li>
+                </ul>
+                <p class="project__role">
+                  <strong>Rôle :</strong> création &amp; livraison client
+                  (freelance)
+                </p>
+                <div class="project__links">
+                  <a
+                    href="https://github.com/Gryndss"
+                    class="btn btn--small"
+                    target="_blank"
+                    rel="noopener"
+                    >GitHub ↗</a
+                  >
+                  <!-- TODO : ajoute ici les liens/captures de tes sites vendus -->
+                </div>
               </div>
-              <div class="project-actions">
-                <a
-                  href="https://github.com/Gryndss"
-                  class="project-link"
-                  title="Voir sur GitHub"
-                >
-                  <img src="Images/Github.png" alt="GitHub" />
-                </a>
-                <button
-                  class="btn-learn-more"
-                  onclick="
-                    window.open('https://comeup.com/fr/@grynds', '_blank')
-                  "
-                >
-                  En savoir plus
-                </button>
+            </article>
+
+            <!-- Projets 42 -->
+            <article class="project">
+              <div class="project__media">
+                <img src="assets/42_Logo.svg.webp" alt="Logo 42" />
               </div>
-            </div>
+              <div class="project__body">
+                <h3 class="project__title">Projets 42 — C &amp; Python</h3>
+                <p class="project__desc">
+                  Piscine de l'École 42 : algorithmie, gestion de la mémoire et
+                  des pointeurs en C, projets en Python. Une base solide, de la
+                  rigueur et une vraie capacité à apprendre vite.
+                </p>
+                <ul class="project__tags">
+                  <li>C</li>
+                  <li>Python</li>
+                  <li>Algorithmie</li>
+                  <li>Rigueur</li>
+                </ul>
+                <p class="project__role">
+                  <strong>Rôle :</strong> travail autonome
+                </p>
+                <div class="project__links">
+                  <a
+                    href="https://github.com/Gryndss"
+                    class="btn btn--small"
+                    target="_blank"
+                    rel="noopener"
+                    >GitHub ↗</a
+                  >
+                </div>
+              </div>
+            </article>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Section Contact -->
-    <section id="contact" class="section contact">
-      <div class="section-container">
-        <h2 class="section-title">
-          Me <span class="title-highlight">Contacter</span>
-        </h2>
-        <div class="contact-wrapper">
-          <div class="contact-info">
-            <div class="info-item">
-              <div class="info-icon">
-                <img src="Images/mail.svg" alt="Email" />
-              </div>
-              <div class="info-content">
-                <h3>Email</h3>
-                <p>gryndss@gmail.com</p>
-              </div>
-            </div>
-            <div class="info-item">
-              <div class="info-icon">
-                <img src="Images/phone.svg" alt="Téléphone" />
-              </div>
-              <div class="info-content">
-                <h3>Téléphone</h3>
-                <p>+33 7 83 56 02 22</p>
-              </div>
-            </div>
-            <div class="info-item">
-              <div class="info-icon">
-                <img src="Images/map-pin.svg" alt="Localisation" />
-              </div>
-              <div class="info-content">
-                <h3>Localisation</h3>
-                <p>Paris, France</p>
-              </div>
-            </div>
-            <p class="contact-availability">
-              Disponible pour des projets freelance
-            </p>
-            <div class="social-links-contact">
-              <a
-                href="https://github.com/Gryndss"
-                class="social-icon-contact"
-                title="GitHub"
-              >
-                <img src="Images/Github.png" alt="GitHub" />
-              </a>
-              <section class="comup-part">
-                <a
-                  href="https://comeup.com/fr/@grynds"
-                  class="social-icon-contact"
-                  title="ComeUp"
-                >
-                  <img src="Images/channels4_profile.png" alt="LinkedIn" />
-                </a>
-              </section>
-            </div>
+      <!-- ===================== SERVICES ===================== -->
+      <section class="section" id="services">
+        <div class="container reveal">
+          <p class="section__eyebrow">Services</p>
+          <h2 class="section__title">Ce que je peux faire pour vous.</h2>
+
+          <div class="services__grid">
+            <article class="service">
+              <h3>Design UI / UX</h3>
+              <p>
+                Interfaces modernes et intuitives, maquettes et prototypes Figma
+                centrés sur l'utilisateur.
+              </p>
+            </article>
+            <article class="service">
+              <h3>Développement frontend</h3>
+              <p>
+                Sites performants, responsives et dynamiques, rapides sur tous
+                les appareils.
+              </p>
+            </article>
+            <article class="service">
+              <h3>Développement backend</h3>
+              <p>
+                API et logique serveur robustes, avec base de données quand le
+                projet l'exige.
+              </p>
+            </article>
+            <article class="service">
+              <h3>Bots Discord</h3>
+              <p>
+                Bots sur-mesure : modération, automatisation, fonctionnalités
+                dédiées.
+              </p>
+            </article>
+            <article class="service">
+              <h3>Intégration d'API</h3>
+              <p>
+                Connexion de services externes à vos sites, bots et
+                applications.
+              </p>
+            </article>
+            <article class="service">
+              <h3>Applications &amp; correction de bugs</h3>
+              <p>
+                Applications de bureau Electron, diagnostic et résolution de
+                problèmes.
+              </p>
+            </article>
           </div>
-          <form id="contact-form" class="contact-form">
-            <div class="form-group">
-              <input type="text" name="name" placeholder="Votre nom" required />
-            </div>
-            <div class="form-group">
-              <input
-                type="email"
-                name="email"
-                placeholder="votre@email.com"
-                required
-              />
-            </div>
-            <div class="form-group">
+        </div>
+      </section>
+
+      <!-- ===================== PARCOURS ===================== -->
+      <section class="section section--light" id="journey">
+        <div class="container reveal">
+          <p class="section__eyebrow">Parcours</p>
+          <h2 class="section__title">Mon cheminement.</h2>
+
+          <ol class="timeline">
+            <li class="timeline__item">
+              <h3>BTS SIO — option SLAM</h3>
+              <p>Solutions logicielles et applications métiers. En cours.</p>
+            </li>
+            <li class="timeline__item">
+              <h3>École 42 — Piscine</h3>
+              <p>
+                Programmation en C et Python, algorithmie et travail intensif en
+                autonomie.
+              </p>
+            </li>
+            <li class="timeline__item">
+              <h3>Fondation d'AIGuild</h3>
+              <p>
+                Lancement et gestion d'un projet d'un pairs, en assistance
+                complète (aiguild.me).
+              </p>
+            </li>
+            <li class="timeline__item">
+              <h3>Projets freelance</h3>
+              <p>
+                Création et vente de sites web, bots et outils sur-mesure pour
+                des clients.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ===================== CONTACT ===================== -->
+      <section class="section section--contact" id="contact">
+        <div class="container reveal">
+          <p class="section__eyebrow">Contact</p>
+          <h2 class="section__title">Travaillons ensemble.</h2>
+          <p class="contact__lead">
+            Disponible pour une <strong>alternance</strong> en développement web
+            / logiciel et pour des projets freelance.
+          </p>
+
+          <ul class="contact__list">
+            <li>
+              <span>Email</span
+              ><a href="mailto:gryndss@gmail.com">gryndss@gmail.com</a>
+            </li>
+            <li>
+              <span>Téléphone</span
+              ><a href="tel:+33783560222">+33 7 83 56 02 22</a>
+            </li>
+            <li>
+              <span>Localisation</span>
+              <p>Paris, France</p>
+            </li>
+          </ul>
+
+          <!-- Formulaire : envoie un email directement via EmailJS (voir script.js) -->
+          <form class="form" id="contact-form" novalidate>
+            <input type="hidden" name="time" />
+            <div class="form__row">
+              <label for="f-name">Nom</label>
               <input
                 type="text"
+                id="f-name"
+                name="name"
+                placeholder="Votre nom"
+                required
+                autocomplete="name"
+              />
+            </div>
+            <div class="form__row">
+              <label for="f-email">Email</label>
+              <input
+                type="email"
+                id="f-email"
+                name="email"
+                placeholder="vous@exemple.com"
+                required
+                autocomplete="email"
+              />
+            </div>
+            <div class="form__row">
+              <label for="f-title">Sujet</label>
+              <input
+                type="text"
+                id="f-title"
                 name="title"
-                placeholder="Objet du message"
+                placeholder="Objet de votre message"
                 required
               />
             </div>
-            <div class="form-group">
+            <div class="form__row">
+              <label for="f-msg">Message</label>
               <textarea
+                id="f-msg"
                 name="message"
-                placeholder="Votre message..."
+                rows="5"
+                placeholder="Parlez-moi de votre projet ou de votre offre d'alternance"
                 required
               ></textarea>
             </div>
-            <input type="hidden" name="time" />
             <p
-              id="contact-status"
-              class="contact-status"
+              class="form__status"
+              id="form-status"
+              role="status"
               aria-live="polite"
             ></p>
-            <button id="contact-submit" type="submit" class="btn btn-primary">
+            <button type="submit" class="btn btn--primary" id="contact-submit">
               Envoyer le message
             </button>
           </form>
-        </div>
-      </div>
-    </section>
 
+          <ul class="contact__social" aria-label="Réseaux sociaux">
+            <li>
+              <a
+                href="https://github.com/Gryndss"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://comeup.com/fr/@grynds"
+                target="_blank"
+                rel="noopener"
+                >ComeUp</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/alvin_91150/"
+                target="_blank"
+                rel="noopener"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a href="https://x.com/a2n_ci" target="_blank" rel="noopener"
+                >X / Twitter</a
+              >
+            </li>
+            <!-- TODO : ajoute ton LinkedIn quand il sera créé -->
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+      <p>
+        © <span id="year"></span> Alvin (Grynds) — Développeur fullstack. Conçu
+        &amp; codé à la main.
+      </p>
+    </footer>
+
+    <!-- EmailJS : permet d'envoyer le formulaire par email sans serveur -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
-
-<!-- redeploy trigger -->
